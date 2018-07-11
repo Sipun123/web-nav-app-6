@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<context-param>
+		<param-name>v1</param-name>
+		<param-value>1000</param-value>
+	</context-param>
+	<servlet>
+		<init-param>
+			<param-name>a</param-name>
+			<param-value>10</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>b</param-name>
+			<param-value>20</param-value>
+		</init-param>
+		<servlet-name>Servlet1</servlet-name>
+		<display-name>Servlet1</display-name>
+		<description></description>
+		<servlet-class>com.monami.servlet.Servlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<init-param>
+			<param-name>x</param-name>
+			<param-value>y</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>z</param-name>
+			<param-value>200</param-value>
+		</init-param>
+		<servlet-name>Servlet2</servlet-name>
+		<display-name>Servlet2</display-name>
+		<description></description>
+		<servlet-class>com.monami.servlet.Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Servlet2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
